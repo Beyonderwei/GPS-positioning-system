@@ -1,0 +1,155 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: xu wei, HZAU, LIC=CZLZ9-407AW-VEZHA-1928N-TB5K9-HTEG9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.26.2.0
+Toolchain Path:  D:\Install_in_D\Keil5.26\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+E:\WorkSpace\EK-TM4C123GXL\GPS½âÎö\ATGM332D-5N\ATGM332D-5N.uvprojx
+Project File Date:  07/03/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Install_in_D\Keil5.26\ARM\ARMCC\Bin'
+Rebuild target 'ATGM332D-5N'
+compiling aes.c...
+compiling adc.c...
+compiling can.c...
+compiling comp.c...
+compiling crc.c...
+compiling cpu.c...
+compiling des.c...
+compiling eeprom.c...
+compiling epi.c...
+compiling emac.c...
+compiling flash.c...
+compiling fpu.c...
+compiling gpio.c...
+compiling i2c.c...
+compiling hibernate.c...
+compiling interrupt.c...
+compiling mpu.c...
+compiling lcd.c...
+compiling onewire.c...
+compiling qei.c...
+compiling pwm.c...
+compiling shamd5.c...
+compiling sw_crc.c...
+compiling ssi.c...
+compiling systick.c...
+compiling sysexc.c...
+compiling uart.c...
+compiling sysctl.c...
+compiling timer.c...
+compiling udma.c...
+compiling watchdog.c...
+compiling main.c...
+compiling uartstdio.c...
+compiling usb.c...
+compiling delay.c...
+compiling my_system.c...
+compiling my_uart.c...
+compiling WDT.c...
+compiling gps.c...
+compiling cJSON.c...
+Drivers\cJSON.c(55): warning:  #1293-D: assignment in condition
+        if (!(copy = (char*)cJSON_malloc(len))) return 0;
+Drivers\cJSON.c(278): warning:  #1293-D: assignment in condition
+  	ptr=str;while ((token=*ptr) && ++len) {if (strchr("\"\\\b\f\n\r\t",token)) len++; else if (token<32) len+=5;ptr++;}
+Drivers\cJSON.c(352): warning:  #111-D: statement is unreachable
+  	return p.buffer;
+Drivers\cJSON.c(423): warning:  #1293-D: assignment in condition
+  		if (!(new_item=cJSON_New_Item())) return 0; 	/* memory fail */
+Drivers\cJSON.c(535): warning:  #1293-D: assignment in condition
+  		if (!(new_item=cJSON_New_Item()))	return 0; /* memory fail */
+Drivers\cJSON.c: 5 warnings, 0 errors
+compiling gprs.c...
+compiling rtx_lib.c...
+assembling startup_TM4C123.s...
+compiling RTX_Config.c...
+compiling system_TM4C123.c...
+linking...
+Program Size: Code=13768 RO-data=2460 RW-data=6764 ZI-data=25812  
+".\Objects\ATGM332D-5N.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: RTOS2 Version: 2.1.3
+   * Component: CORE Version: 5.1.2
+   * Component: Keil RTX5 Variant: Library Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.MDK-Middleware.7.7.0.pack
+                Keil.MDK-Middleware.7.7.0
+                Middleware for Keil MDK-Professional and MDK-Plus
+   * Component: CORE Variant: Release Version: 6.12.8
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\CMSIS
+  .\RTE\_ATGM332D-5N
+  D:\Install_in_D\Keil5.26\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  D:\Install_in_D\Keil5.26\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\RTOS2\Include
+  D:\Install_in_D\Keil5.26\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\RTOS2\RTX\Include
+  D:\Install_in_D\Keil5.26\ARM\PACK\Keil\MDK-Middleware\7.7.0\USB\Include
+  D:\Install_in_D\Keil5.26\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS:RTOS2:2.1.3 (API)
+      Include file:  CMSIS\RTOS2\Include\cmsis_os2.h
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+
+   * Component: ARM::CMSIS:RTOS2:Keil RTX5:Library:5.4.0
+      Include file:  CMSIS\RTOS2\RTX\Include\rtx_os.h
+      Include file:  CMSIS\RTOS2\RTX\Config\RTX_Config.h
+      Source file:   CMSIS\RTOS2\RTX\Config\RTX_Config.c
+      Source file:   CMSIS\RTOS2\RTX\Template\svc_user.c
+      Source file:   CMSIS\RTOS2\RTX\Template\MsgQueue.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Thread.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Timer.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Events.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Semaphore.c
+      Source file:   CMSIS\RTOS2\RTX\Template\main.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Mutex.c
+      Source file:   CMSIS\RTOS2\RTX\Template\MemPool.c
+      Library file:  CMSIS\RTOS2\RTX\Library\ARM\RTX_CM4F.lib
+      Source file:   CMSIS\RTOS2\RTX\Source\rtx_lib.c
+
+   * Component: Keil.MDK-Plus::USB:CORE:Release:6.12.8
+      Library file:  USB\Lib\ARM\USB_CM3_L.lib
+      Include file:  USB\Include\rl_usb.h
+
+   * Component: Keil::Device:Startup:1.0.1
+      Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+      Source file:   Device\Source\system_TM4C123.c
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
